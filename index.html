@@ -63,6 +63,115 @@
             }
         }
 
+        /* header */
+        .header {
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: var(--bulma-white);
+        }
+
+        /* heropaneluno */
+        .heropaneluno {
+            background-color: var(--bulma-light);
+            margin-bottom: 0;
+            padding-bottom: 3rem;
+        }
+
+        .heropaneluno .title {
+            color: var(--bulma-dark);
+            font-family: var(--bulma-family-primary);
+        }
+
+        .heropaneluno .subtitle {
+            color: var(--bulma-grey);
+        }
+
+        /* heropaneldos */
+        .heropaneldos {
+            background-color: var(--bulma-dark);
+        }
+
+        .heropaneldos .title {
+            color: var(--bulma-white);
+        }
+
+        .heropaneldos .subtitle {
+            color: var(--bulma-grey-light);
+        }
+
+        /* grilla */
+        .grilla {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .grilla .card {
+            border-radius: var(--bulma-radius-large);
+            box-shadow: var(--bulma-shadow);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .grilla .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .grilla .card .title {
+            font-size: var(--bulma-size-normal);
+            color: var(--bulma-dark);
+        }
+
+        .grilla .card .content {
+            font-size: var(--bulma-size-small);
+            color: var(--bulma-grey);
+        }
+
+        /* registro */
+        .registro {
+            background-color: var(--bulma-white-ter);
+            border-radius: var(--bulma-radius-large);
+            overflow: hidden;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .registro .label {
+            color: var(--bulma-dark);
+            font-family: var(--bulma-family-primary);
+        }
+
+        .registro .input,
+        .registro .textarea,
+        .registro .select select {
+            border-color: var(--bulma-grey-lighter);
+            font-family: var(--bulma-family-primary);
+        }
+
+        .registro .input:focus,
+        .registro .textarea:focus {
+            border-color: var(--bulma-primary);
+            box-shadow: 0 0 0 2px rgba(0, 209, 178, 0.2);
+        }
+
+        /* footer */
+        footer.footer {
+            background-color: var(--bulma-dark);
+            padding: 2rem 1.5rem;
+        }
+
+        footer.footer a {
+            color: var(--bulma-grey-light);
+            font-family: var(--bulma-family-primary);
+            font-size: var(--bulma-size-small);
+            transition: color 0.2s;
+        }
+
+        footer.footer a:hover {
+            color: var(--bulma-primary);
+        }
+
         main .carrucel .action-panel {
             position: absolute;
             top: 50%;
@@ -304,7 +413,7 @@
                 </div>
             </div>
         </section>
-        <section class="hero is-medium heropanel2">
+        <section class="hero is-medium heropaneldos">
             <div class="hero-body">
                 <div class="columns is-vcentered reverse-row-desktop">
                     <div class="column is-6">
